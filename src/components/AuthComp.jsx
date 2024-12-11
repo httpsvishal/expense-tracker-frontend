@@ -5,7 +5,7 @@ import { useGoogleLogin } from '@react-oauth/google';
 import Juggler from './Juggler';
 
 const AuthComp = ({ title, buttonText, onSubmit, children }) => {
-    
+
     const login = useGoogleLogin({
         onSuccess: async (tokenResponse) => {
             // Send the token to your backend
@@ -23,7 +23,9 @@ const AuthComp = ({ title, buttonText, onSubmit, children }) => {
         },
     });
     return (
-        <div className='h-[100vh] bg-[url(src/assets/background.jpg)] p-10 bg-cover bg-left-bottom flex justify-end '>
+        <div className='h-[100vh] bg-[url(src/assets/background.jpg)] p-10 bg-cover bg-left-bottom flex justify-end '
+            sx={{ backgroundImage: 'url(src/assets/background.jpg)' }}
+        >
             <Juggler />
             <div className='w-full flex justify-end md:w-1/2 p-4 ps-10 h-full'>
                 <div className='flex w-4/5 flex-col gap-4 justify-center items-start h-full'>
