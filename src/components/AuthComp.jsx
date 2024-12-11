@@ -1,10 +1,11 @@
 import React from 'react'
-import ContinueWithGoogleButton from './continueWithGoogleButton'
+import ContinueWithGoogleButton from './ContinueWithGoogleButton.jsx'
 import './GoogleButtonCss.css'
 import { useGoogleLogin } from '@react-oauth/google';
 import Juggler from './Juggler';
 
 const AuthComp = ({ title, buttonText, onSubmit, children }) => {
+    
     const login = useGoogleLogin({
         onSuccess: async (tokenResponse) => {
             // Send the token to your backend
