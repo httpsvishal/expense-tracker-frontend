@@ -197,7 +197,7 @@ const Juggler = () => {
                     <div className=' h-[135px] w-[135px] relative z-0  border  border-white/30 rounded-lg shadow-lg '>
                         <div ref={box1ref} className='box1 m-0 p-2 flex bg-[#a36ef9] relative z-50 border-none rounded-lg flex-col justify-end h-full w-full'>
                             <div
-                                sx={{ backgroundImage: `url(${plusBg})` }}
+                                style={{ backgroundImage: `url(${plusBg})` }}
                                 className="absolute inset-0 bg-cover bg-top bg-[url('src/assets/plusBg.png')] bg-repeat opacity-20">
                             </div>
                             <p className='text-white'>Budget better, </p>
@@ -225,7 +225,7 @@ const Juggler = () => {
                     <div className='h-[135px] w-[135px] relative z-10  border  border-white/30 rounded-lg shadow-lg '>
                         <div ref={box4ref} className='box4 m-0 p-2 flex bg-[#a36ef9] relative z-50 border-none rounded-lg flex-col justify-end h-full w-full'>
                             <div
-                                sx={{ backgroundImage: `url(${plusBg})` }}
+                                style={{ backgroundImage: `url(${plusBg})` }}
                                 className="absolute inset-0 bg-cover bg-top bg-[url('src/assets/plusBg.png')] bg-repeat opacity-20">
                             </div>
                             <p className='text-white'>Your money,  </p>
