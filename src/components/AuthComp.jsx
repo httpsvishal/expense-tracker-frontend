@@ -25,7 +25,7 @@ const AuthComp = ({ title, buttonText, onSubmit, children }) => {
     });
     return (
         <div className='h-[100vh] bg-[url(src/assets/background.jpg)] p-10 bg-cover bg-left-bottom flex justify-end '
-            sx={{ backgroundImage: {background} }}
+            sx={{ backgroundImage: `url(${background})` }}
         >
             <Juggler />
             <div className='w-full flex justify-end md:w-1/2 p-4 ps-10 h-full'>
