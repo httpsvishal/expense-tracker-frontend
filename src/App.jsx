@@ -3,7 +3,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import AuthPage from './pages/AuthPage'
 import SignupPage from './pages/SignupPage'
 import LoginPage from './pages/LoginPage'
-import Homepage from './pages/homepage'
+import Homepage from './pages/Homepage'
 
 function App() {
 
